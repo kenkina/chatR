@@ -1,0 +1,4 @@
+applications:
+ - name: chatR
+   host: chatRdemo
+   memory: 256M
