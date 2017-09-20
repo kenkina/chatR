@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatR</title>
+    <meta charset="utf-8" />
+
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/index.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <!-- Script autogenerado -->
+    <script src="signalr/hubs"></script>
+    <script src="Content/js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <!-- Lista de usuarios -->
+            <div class="col-xs-3 col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="onlineUsersCount">Usuarios: 0</div>
+                    <div class="panel-body panel-fixed-height">
+                        <ul id="userList"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="col-xs-3 col-md-3" id="chatPanel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Mensajes</div>
+                    <div class="panel-body panel-fixed-height">
+                        <ul id="messagesArea"></ul>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="userMessage" placeholder="Mensaje">
+                    <span class="input-group-btn">
+                        <a class="btn btn-default" id="btnSendMessage">Enviar</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Doc -->
+            <div class="col-xs-6 col-md-6 container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Doc</div>
+                    <div class="panel-body panel-fixed-height">
+                        <textarea class="form-control" id="userDoc" rows="20"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
